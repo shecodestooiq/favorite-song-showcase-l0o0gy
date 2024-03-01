@@ -8,5 +8,31 @@
 
   <body>
     <script src="index.js"></script>
+    <main>
+        
+      <div>
+        <form onsubmit="displaySongInfo()">
+          <h1>share your favorite song</h1>
+          <label for="songName">Song Name:</label><br>
+        <input type="text" id="songName" required><br>
+
+        <label for="youtubeLink">YouTube Link:</label><br>
+        <input type="text" id="youtubeLink" required><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" required></textarea><br>
+
+        <label for="year">Year First Listened:</label><br>
+        <input type="number" id="year" required><br><br>
+
+        <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="display-area" style="display: none;">
+      <div></div>
+
+      </div>
+    </main>
+  
   </body>
 </html>
