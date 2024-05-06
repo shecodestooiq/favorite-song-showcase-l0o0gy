@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favorite Song Showcase</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Song Information</title>
+</head>
+<body>
+    <h1>Submit Song Information</h1>
+    <main class="Container">
+    <div id="formarea">
+        <form id="songForm" onsubmit="displaySongInfo(); return false;">
+            <label for="songName" >Song Name:</label> <br><br>
+            <input type="text" id="songName"required > <br><br>
+            <label for="youtubeLink">YouTube Link:</label> <br><br>
+            <input type="text" id="youtubeLink" required><br><br>
+            <label for="description">Description:</label><br><br>
+            <textarea id="description" required></textarea><br><br>
+            <label for="year">Year:</label><br><br>
+            <input type="number" id="year" required><br><br>
+            <button type="submit">Play you song </button>
+        </form>
+    </div>
 
-  <body>
-    <script src="index.js"></script>
-  </body>
+    <div id="display-area">
+        <div id="videoContainer"></div>
+        <h2>Song Information</h2>
+        <p>Name: <span id="displaySongName"></span></p>
+        <p>Description: <span id="displayDescription"></span></p>
+        <p>Year: <span id="displayYear"></span></p>
+    </div>
+  </main>
+    <script  src="index.js"></script>
+</body>
 </html>
